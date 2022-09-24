@@ -1,0 +1,10 @@
+Desafio  - Git Github
+
+> Requisitos:
+	1. noções básicas de Git e Github
+	2. Gitbash instalado
+	3. Engajamento e vontade de aprender
+
+> Descrição desafio:
+	1. Criar próprio repositório
+	2. Tema livre

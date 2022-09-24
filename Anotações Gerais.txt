@@ -1,0 +1,70 @@
+1. Comandos básicos para um bom desempenho no terminal (Windows)
+	> dir - lista diretórios
+	> cd - entrar na pasta
+	> cd windows - para entrar na página do Windows
+	> cd.. - voltar na pasta (cd = change direct)
+	> mkdir - criar uma pasta
+	> cls - limpar a tela - clear
+	> echo - criar (Ex.: echo hello.txt)
+	> ls - listar
+	> ls -a - listar itens ocultos
+	> git status - para saber que estágio está o arquivo
+	> mv (+nome do arquivo) ./ nome da pasta para onde quer mover o arquivo
+
+
+2. SHA - algorítimo de encriptação. Gera um conjunto de 40 dígitos. Uma forma curta de representar um arquivo.
+
+3. GiTBash - tem que estar na mesma pasta onde está o arquivo a ser encriptado (?)
+
+4. Objetos fundamentais do Git - responsáveis pelo versionamento do software
+	> Blobs - contém metadados do Git, que são tipo do objeto, tamanho da string, tamanho do arquivo, etc.
+	É o bloco básico da composição.
+
+	> Trees - também contém metadados. Aponta para os Blobs ou outras árvores. O blob só guarda o SHA do arquivo. A árvore serão responsáveis por montar toda a estrutuda do arquivo, conterá o nome. Possui SHA. Se alterar SHA do Blob altera SHA da Tree.
+
+	Exemplo: Tree - Readme - Blobs						|
+				  - Rakefile - Blobs 					|	Commit
+				  - lib - tree (simplegit.rb) - blob 	|
+
+	> Commits: objeto mais importante de todos, é onde vai juntar todos os outros. Aponta para árvore, para um parente que é o
+	útimo commit feito antes dele, aponta para um autor e para uma mensagem. O SHA1 desse commit é o hash de toda a essa informação.
+
+5. Chaves SSH e Tokens - GitHub
+Precisa autenticação para usar o Github, para ter mais segurança. 
+
+	> Chave de SSH - forma de estabelecer uma conexão segura e encriptada entre duas máquinas. Servidor do Github x máquina do usuário.
+	GitHub precisa atestar que nossa máquina é confiável. Para encontrar a chave - settings - SSH and GPG Keys - 
+	Como fazer: vários comandos no GitBash. Se precisar fazer uma nova, procurar no Youtube.
+
+	> Token de acesso pessoal: não fiz, é opcional.
+
+6. Primeiros comandos com o Git
+
+	> Iniciar o Git
+		>> git init - utilizado no Gitbash para iniciar o processo.
+	
+	> Iniciar o versionamento
+		>> git add
+
+	> Criar um commit
+		>> gitcommit
+
+7. Passo a passo
+
+	>> Git INIT - inicia um repositório dentro de um diretório
+
+> Untracked - git ainda não sabe que tem o arquivo, só depois do ADD
+
+> Tracked
+	>> Unmodified
+	>> Modified
+	>> Staged - se preparando para fazer parte de um outro tipo de agrupamento
+\\ depois do Staged - vai para o Commit - depois do commit para o Unmodified. Commit é como se fosse uma foto.
+
+> Ambiente de desenvolviment
+	>> onde tem o working directory
+	>> staging area
+	>> local repository - quando faz um commit, vai para o LR, e depois disso pode ir para o repositório remoto
+
+
+

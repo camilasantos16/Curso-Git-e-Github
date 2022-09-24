@@ -1,0 +1,27 @@
+Passo a Passo
+
+1. Criando um repositório
+2. Gitbash here na pasta
+3. cd "nome da pasta"/ - para mover até a pasta caso não esteja dentro dela
+4. Criar nova pasta com comando mkdir "nome da pasta"
+5. Ir até a pasta criada através do comando cd "nome da pasta"/
+6. Iniciar o Git dentro dessa pasta com o git init - significa criar um repositório
+7. A pasta criada, é oculta, chamada .git. Com o comando ls -a mostra os arquivos ocultos
+8. Criar um arquivo
+(configuração se não funcionar git congig --global user.email "cs.camila@yahoo.com.br")
+(git config --global user.name camilasantos16)
+9. Posso colar um arquivo ali dentro da pasta
+10. Depois do arquivo prontinho ali dentro comando git add*
+11. Só gera nova linha para colocar novo comando
+12. Comando git commit -m "commit inicial"
+13. No Github clicar em Your repositories
+14. New
+15. Nomear o repositório
+16. Colocar uma descrição
+(ver a questão do Read me)
+17. Create repository
+18. Copiar o endereço URL do repositório no Github
+19. No Gitbash, vamos empurrar do reposiório local para o repositório remoto (push)
+20. Comando git remote add origin "colar link do Github"
+21. git status para verificar se está tudo ok (on branch master nothing to commit)
+22. git push origin master
